@@ -1,0 +1,25 @@
+%h1 Listing books
+
+%table
+  %tr
+    %th Isbn
+    %th Title
+    %th Image
+    %th Published
+    %th
+    %th
+    %th
+
+  - @books.each do |book|
+    %tr
+      %td= book.isbn
+      %td= book.title
+      %td= book.image
+      %td= book.published
+      %td= link_to 'Show', book
+      %td= link_to 'Edit', edit_book_path(book)
+      %td= link_to 'Destroy', book, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Book', new_book_path

@@ -1,0 +1,21 @@
+%h1 Listing books_publishers
+
+%table
+  %tr
+    %th Book
+    %th Publisher
+    %th
+    %th
+    %th
+
+  - @books_publishers.each do |books_publisher|
+    %tr
+      %td= books_publisher.book_id
+      %td= books_publisher.publisher_id
+      %td= link_to 'Show', books_publisher
+      %td= link_to 'Edit', edit_books_publisher_path(books_publisher)
+      %td= link_to 'Destroy', books_publisher, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Books publisher', new_books_publisher_path
