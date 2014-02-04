@@ -1,7 +1,11 @@
-#page-body .home {
-    background-image: url('logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 768px;
-    min-width: 1024px;
+.home .wrapper {
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 420px;
+    height: 340px;
 }
