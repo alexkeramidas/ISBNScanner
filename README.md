@@ -7,5 +7,5 @@ Using
  - Rails 4
  - PostGreSQL
  - Active Admin
- - Grape
+ - Grape API
 
